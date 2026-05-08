@@ -1,3 +1,4 @@
+import { InlineAd } from '@apps-in-toss/framework';
 import { createRoute } from '@granite-js/react-native';
 import React, { useEffect, useRef } from 'react';
 import {
@@ -94,6 +95,16 @@ function ResultPage() {
           <Text style={styles.gradeMessage}>{grade.message}</Text>
         </View>
 
+        <View style={styles.adContainer}>
+          <InlineAd
+            adGroupId="ait.v2.live.8a819d7c24cd4f0c"
+            theme="auto"
+            tone="blackAndWhite"
+            variant="expanded"
+            impressFallbackOnMount={true}
+          />
+        </View>
+
         <View style={styles.summaryCard}>
           <Text style={styles.summaryTitle}>결과 요약</Text>
           <View style={styles.summaryRow}>
@@ -159,6 +170,12 @@ const styles = StyleSheet.create({
     fontSize: 64,
     fontWeight: '700',
     lineHeight: 72,
+  },
+  adContainer: {
+    width: '100%',
+    minHeight: 96,
+    overflow: 'hidden',
+    borderRadius: 16,
   },
   scoreTotal: {
     fontSize: 24,

@@ -1,3 +1,4 @@
+import { InlineAd } from '@apps-in-toss/framework';
 import { createRoute } from '@granite-js/react-native';
 import React, { useEffect, useRef, useState } from 'react';
 import {
@@ -150,6 +151,13 @@ function QuizPage() {
 
       {isAnswered && (
         <View style={styles.bottomContainer}>
+          <InlineAd
+            adGroupId="ait.v2.live.8a819d7c24cd4f0c"
+            theme="auto"
+            tone="blackAndWhite"
+            variant="expanded"
+            impressFallbackOnMount={true}
+          />
           <TouchableOpacity style={styles.nextButton} onPress={handleNext} activeOpacity={0.8}>
             <Text style={styles.nextButtonText}>
               {isLast ? '결과 보기' : '다음 문제'}
@@ -424,6 +432,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingBottom: 32,
     paddingTop: 16,
+    gap: 12,
   },
   nextButton: {
     backgroundColor: '#3182F6',
