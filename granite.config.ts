@@ -13,7 +13,7 @@ export default defineConfig({
       brand: {
         displayName: '우회전 퀴즈',
         primaryColor: '#3182F6',
-        icon: '',
+        icon: 'https://static.toss.im/appsintoss/33837/bb97132b-ce42-4524-aaa5-6d696b07ffa9.png',
       },
       permissions: [],
     }),
